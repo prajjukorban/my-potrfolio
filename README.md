@@ -1,9 +1,11 @@
-# My Portfolio
+<h3>My Portfolio</h3> <hr>
 
 This is a personal portfolio website to showcase my projects, skills, and contact information.<br>
 Demo: <a href="https://prajwalkorbanportfolio.netlify.app/"> Click here</a>
+<img src="portfolio_screenshot" align="right" height="250" > <br>
 
-## Features
+<h3>Features</h3> 
+<hr>
 
 - **Home Page**: Introduction and brief overview.
 - **About Page**: Detailed information about me, my skills, and experience.

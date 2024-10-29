@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Apply to the whole document */
+html {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #ccc; /* For Firefox */
+  scroll-behavior: smooth;
+}
+
+/* Webkit browsers (Chrome, Safari) */
+.content::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.content::-webkit-scrollbar-track {
+  background: #ccc; /* Track color */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 3px solid #ccc; /* Space around the thumb for padding */
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #2364aa;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  #imgp {
+    max-width: 20vh;
+    max-height: 50vw;
+    background-color: #3da5d9;
+    border-radius: 59% 41% 25% 75% / 31% 60% 35% 69%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+  }
+  .header {
+    height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+
+  #simpleUsage {
+    font-size: x-large;
+    font-weight: 600;
+    width: 95vw;
+  }
+
+  #simpleUsage2 {
+    font-size: x-large;
+    font-weight: 400;
+    color: rgb(253, 253, 253);
+    width: 90vw;
+  }
+}
+
+.imgp {
+  max-width: 350px;
+  max-height: 350px;
+  background-color: #3da5d9;
+  margin: 50px auto;
+  border-radius: 59% 41% 25% 75% / 31% 60% 35% 69%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+}
+
+.imgp img {
+  max-height: 350px;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  overflow: auto;
+  cursor: pointer;
+  width: 100dvw;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  background-color: #3da5d9;
+  overflow: hidden;
+}
+
+.navul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navitems {
+  font-weight: 200;
+  margin: 0 5px;
+  text-decoration: none;
+  color: inherit;
+}
+.navitemsi{
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 2px;
+}
+
+.navitemsi:hover{
+ scale: 1.2;
+}
+
+
+#name {
+  font-weight: bold;
+  color: white;
+}
+
+.navitems:hover {
+  border-bottom: 1px solid white;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header p {
+  color: white;
+  width: 400px;
+  font-size: 50px;
+  height: auto;
+}
+
+#simpleUsage {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#simpleUsage2 {
+  font-size: x-large;
+  font-weight: 200;
+  color: rgb(175, 175, 175);
+}
+.left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0;
+  width: 40vw;
+  margin: 5px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hlo {
+  color: #fec601;
+  font-weight: 300;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: #fec601;
+  color: #2364aa;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 15px;
+  font-weight: 200;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.skill {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+}
+
+#skilltext{
+font-size: x-large;
+font-weight: 500;
+color:#3da5d9;
+position: absolute;
+top: 10px;
+}
+
+.skilllogo{
+  min-height: 10vh;
+  max-height: 10vh;
+  cursor: pointer;
+}
+
+.skilllogos{
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 95vw;
+    gap: 15px;
+}
+
+.skilllogo:hover{
+  filter: drop-shadow(2px 4px 5px #8dd8fd);
+}
+
+.textskill{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-weight: 300;
+}
+.main p {
+  color: white;
+}
+.profile-image {
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.about-me {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-me h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+.skills,
+.experience {
+  margin-bottom: 2rem;
+}
+.skills h3,
+.experience h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.skills ul {
+  color: white;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.qul {
+  border-top: 1px solid #000;
+  background-color: white;
+}
+
+section div p {
+  color: #000000;
+  font-weight: 400;
+}
+
+.ccf {
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.contact-form h2 {
+  color: #2364aa;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  color: #2364aa;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3da5d9;
+}
+
+#btn {
+  background-color: #2364aa;
+  color: white;
+  font-weight: 300;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#btn:hover {
+  background-color: #3da5d9;
+}
+
+.project {
+  font-weight: 800;
+  font-size: x-large;
+  color: white;
+}
+
+.Projects {
+  margin-top: 25px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

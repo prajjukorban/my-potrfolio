@@ -127,9 +127,13 @@ padding: 2px;
 }
 
 
-#name {
+#name{
   font-weight: bold;
-  color: white;
+  color: rgb(255, 251, 251);
+}
+
+#nameinput{
+  color: black;
 }
 
 .navitems:hover {
@@ -157,6 +161,7 @@ a {
   font-size: 50px;
   font-weight: 600;
 }
+
 
 #simpleUsage2 {
   font-size: x-large;

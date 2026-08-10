@@ -2,288 +2,1160 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Prajwal Korban — AI & Full-Stack Developer</title>
+  <meta name="description"
+    content="Prajwal Korban — B.Tech CSE (Data Science) student at Rai Technology University, Bengaluru. Specializing in AI/ML and Full-Stack Web Development." />
+  <meta name="keywords"
+    content="Prajwal Korban, AI Developer, Full-Stack Engineer, Data Science, Rai Technology University, Bengaluru, Python, Machine Learning, React, Portfolio" />
+  <meta name="author" content="Prajwal Korban" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://prajwalkorbanportfolio.netlify.app/" />
+  <meta name="theme-color" content="#070d1a" />
 
-  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Prajwal Korban</title>
-  <link rel="shortcut icon" href="images/photo.png" type="image/x-icon">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://prajwalkorbanportfolio.netlify.app/" />
+  <meta property="og:title" content="Prajwal Korban — AI & Full-Stack Developer" />
+  <meta property="og:description"
+    content="AI Developer & Full-Stack Engineer building intelligent web applications. B.Tech CSE (Data Science) student." />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/photo.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://prajwalkorbanportfolio.netlify.app/" />
+  <meta property="twitter:title" content="Prajwal Korban — AI & Full-Stack Developer" />
+  <meta property="twitter:description"
+    content="AI Developer & Full-Stack Engineer building intelligent web applications. B.Tech CSE (Data Science) student." />
+  <meta property="twitter:image"
+    content="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/photo.png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Prajwal Korban",
+  "url": "https://prajwalkorbanportfolio.netlify.app/",
+  "image": "https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/photo.png",
+  "sameAs": [
+    "https://github.com/prajjukorban",
+    "https://www.linkedin.com/in/prajwalkorban"
+  ],
+  "jobTitle": "AI Developer & Full-Stack Engineer",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Rai Technology University, Bengaluru"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Data Science",
+    "Full-Stack Web Development",
+    "Natural Language Processing (NLP)",
+    "NLTK",
+    "Python",
+    "React",
+    "Node.js",
+    "Flask"
+  ]
+}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-  <nav>
-    <p id="name">Prajwal K</p>
-    <ul class="navul">
-      <a href="#top">
-        <li class="navitems">Home</li>
-      </a>
-      <a href="projects.html">
-        <li class="navitems">Projects</li>
-      </a>
-      <a href="#abme">
-        <li class="navitems">About Me</li>
-      </a>
-      <a href="#contact">
-        <li class="navitems">Contact Me</li>
-      </a>
-      <a class="flex justify-center items-center navitemsi" href="https://github.com/prajjukorban">
-        <img class="navitemsi" src="images/github.png" >
-        <li class="navitems">GitHub</li>
-       </a>
-   </nav>
-
-  <div id="top" class="header">
-    <div class="left">
-      <div id="hlo">Hello, Welcome</div>
-      <div id="simpleUsage"></div>
-      <div id="simpleUsage2"></div>
-      <a href="#contact"><button class="btn">Contact us</button></a>
-    </div>
-    <div class="right">
-      <div id="imgp" class="imgp"><img src="images/photo.png"></div>
-    </div>
+  <!-- ambient + grid -->
+  <div class="amb" aria-hidden="true">
+    <div class="amb-a"></div>
+    <div class="amb-b"></div>
   </div>
+  <div class="grid-bg" aria-hidden="true"></div>
 
-  <div class="skill">
+  <!-- ══════════ NAV ══════════ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="#hero" class="nav-mark">
+      <div class="nav-mark-icon" aria-hidden="true">PK</div>
+      Prajwal Korban
+    </a>
 
-    <div class="textskill">
-      <p id="skilltext">Skills</p>
+    <div class="nav-pill" aria-label="Site sections">
+      <a href="#hero">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
-    <div class="skilllogos">
-    <img src="images/pngegg.png" alt="" class="skilllogo">
-    <img src="images/pngegg (1).png" alt="" class="skilllogo">
-    <img src="images/pngegg (2).png" alt="" class="skilllogo">
-    <img src="images/react.png" alt="" class="skilllogo">
-    <img src="images/node.png" alt="" class="skilllogo">
-    <img src="images/express.png" alt="" class="skilllogo">
-    <img height="70px"  width="90px" src="images/next.svg" alt="" class="skilllogo">
-    <img src="images/phyton.png" alt="" class="skilllogo">
-    <img src="https://static-00.iconduck.com/assets.00/flask-icon-797x1024-5a9evoph.png" alt="" class="skilllogo">
-    <img src="images/sklearn.png" alt="" class="skilllogo">
-    <img src="images/tensorflow.png" alt="" class="skilllogo">
-    <img src="images/sql.png" alt="" class="skilllogo">
-  </div>
 
-  </div>
+    <div class="nav-end">
+      <a href="https://github.com/prajjukorban" class="nav-gh-btn" target="_blank" rel="noopener"
+        aria-label="View GitHub profile">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+        </svg>
+        GitHub
+      </a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
+  <nav class="mob-nav" id="mob-nav" aria-label="Mobile navigation">
+    <a href="#hero" onclick="closeMob()">Home</a>
+    <a href="#skills" onclick="closeMob()">Skills</a>
+    <a href="#projects" onclick="closeMob()">Projects</a>
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+    <a href="https://github.com/prajjukorban" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/prajwalkorban" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="mailto:prajjukorban@gmail.com">Email ↗</a>
+  </nav>
 
-  <main id="abme" class="main">
-    <section class="about-me">
-      <img src="images/photo.png" alt="Profile Picture" class="profile-image">
-      <h2>About Me</h2>
-      <p>a passionate developer specializing in Frontend Web Development and currently expanding my expertise in Backend Development and Data Science. I'm pursuing a B.Tech in Computer Science and Engineering with a specialization in Data Science at Rai Technology University, Bengaluru. I love building beautiful, functional, and impactful web applications—and now, intelligent solutions with the power of machine learning.
-      </p>
-    </section>
+  <!-- ══════════ HERO ══════════ -->
+  <section id="hero" aria-label="Introduction">
+    <canvas class="hero-particles" id="canvas" aria-hidden="true"></canvas>
 
-    <section class="skills">
-      <h3>My Skills</h3>
-      <ul>
-        <li><b>Frontend:</b> HTML, CSS, JavaScript, React,Next.js</li>
-        <li><b>Backend:</b> Node.js, Flask</li>
-        <li><b>Programming & Tools:</b> Python, NumPy, pandas, scikit-learn, Matplotlib, TensorFlow</li>
-      </ul>
-    </section>
-
-    <section class="experience">
-      <h3>Experience</h3>
-      <p>
-        As a <strong>first-year B.Tech student</strong>, I have developed a solid foundation in both 
-        <strong>web development</strong> and <strong>data science</strong>. My journey began with building 
-        dynamic and responsive web apps like a <em>personal portfolio website</em> and an 
-        <em>interactive weather application</em>, showcasing my skills in web design and user interaction.
-      </p>
-    
-      <p>
-        Expanding into data science, I completed a comprehensive <strong>Udemy course</strong>, gaining hands-on 
-        experience with <strong>NumPy</strong>, <strong>pandas</strong>, <strong>scikit-learn</strong>, 
-        <strong>Matplotlib</strong>, and <strong>TensorFlow</strong>. I’ve built projects such as:
-      </p>
-    
-      <ul>
-        <li class="text-white list-disc "><b class="font-extrabold">Heart Disease Prediction Model</b> using machine learning algorithms</li>
-        <li class="text-white list-disc"><b class="font-extrabold">Dog Breed Classification App</b> using deep learning and computer vision</li>
-      </ul>
-    
-      <p>
-        My passion for learning and creating keeps me motivated to explore new technologies and contribute 
-        meaningfully to every project I take on.
-      </p>
-    </section>
-
-  </main>
-
-  <div class="qul">
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+    <div class="hero-wrap">
+      <!-- text -->
+      <div class="hero-text">
+        <div class="hero-meta rv">
+          <div class="status-chip">
+            <span class="s-dot" aria-hidden="true"></span>
+            Open to internships
           </div>
-          <div
-            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-            1</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div
-              class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-12 h-12" viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Background</h2>
-              <p class="leading-relaxed">I was born on November 3, 2006, and completed my Class 10 in 2022 at Mahatma Gandhi School, Yadgir. I pursued the PCMB stream in Class 11 and 12 at Prerana PU College, Yadgir, where I Passed with 80%. My academic journey laid a strong foundation for my growing interest in technology and software development.</p>
-            </div>
+          <span class="hero-loc" aria-label="Location: Bengaluru, India">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Bengaluru, India
+          </span>
+        </div>
+
+        <h1 class="hero-h1 rv d1">
+          <span class="gtw">Prajwal</span><br>
+          <span class="gt">Korban</span>
+        </h1>
+
+        <p class="hero-role rv d2">
+          <em>AI Developer</em> &thinsp;·&thinsp; <em>Full-Stack Engineer</em> &thinsp;·&thinsp; CS Student
+        </p>
+
+        <p class="hero-p rv d2">
+          Building intelligent web applications at the intersection of <strong>machine learning</strong> and modern
+          frontend engineering. B.Tech CSE (Data Science) at Rai Technology University.
+        </p>
+
+        <div class="hero-acts rv d3">
+          <a href="#projects" class="btn btn-fill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            Let's Talk
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-social rv d4" aria-label="Social profiles">
+          <a href="https://github.com/prajjukorban" class="soc" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/prajwalkorban" class="soc" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="mailto:prajjukorban@gmail.com" class="soc" aria-label="Email">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- profile visual -->
+      <div class="hero-vis rv d2" aria-hidden="true">
+        <div class="prof-frame">
+          <div class="prof-ring"></div>
+          <div class="prof-ring-mask"></div>
+          <img class="prof-img" src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/photo.png"
+            alt="Prajwal Korban" width="226" height="226" />
+          <div class="fc fc1">
+            <div class="fc-lbl">Specialization</div>
+            <div class="fc-val b">AI · Data Science</div>
+          </div>
+          <div class="fc fc2">
+            <div class="fc-lbl">University</div>
+            <div class="fc-val">Rai Technology Univ.</div>
           </div>
         </div>
-        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div
-            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-            2</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div
-              class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-12 h-12" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-            </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Education</h2>
-              <p class="leading-relaxed">I’m currently pursuing a B.Tech in Computer Science and Engineering (Data Science) at Rai Technology University, Bengaluru. I began my tech journey in high school by learning HTML, CSS, and JavaScript, building projects like a personal portfolio and weather app. Later, I explored Machine Learning through a Udemy course, gaining hands-on experience with tools like NumPy, pandas, scikit-learn, and TensorFlow. I've built ML projects like heart disease prediction and dog breed classification, combining my interests in web and data science.</p>
-            </div>
-          </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="skills-layout">
+        <div class="skills-aside rv">
+          <p class="ew">What I work with</p>
+          <h2 class="sh">Technical<br>Skills</h2>
+          <p class="sl">A well-rounded stack spanning frontend engineering, backend services, and AI/ML pipelines.</p>
         </div>
-        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div
-            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-            3</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div
-              class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-12 h-12" viewBox="0 0 24 24">
-                <circle cx="12" cy="5" r="3"></circle>
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-              </svg>
+
+        <div class="skill-grid">
+          <div class="sk rv d1">
+            <div class="sk-head">
+              <div class="sk-icon bl" aria-hidden="true">🎨</div>
+              <div class="sk-name">Frontend</div>
             </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Skills</h2>
-              <p class="leading-relaxed">My projects have helped me develop a strong grasp of web development fundamentals, including designing responsive layouts, building interactive user interfaces, and writing clean, efficient code. I also gained hands-on experience in integrating Machine Learning models into web applications using Flask, bridging the gap between frontend and data-driven backends.</p>
+            <div class="chips">
+              <span class="ch ch-b"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                  alt="HTML5 logo" />HTML</span>
+              <span class="ch ch-b"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                  alt="CSS3 logo" />CSS</span>
+              <span class="ch ch-b"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                  alt="JavaScript logo" />JavaScript</span>
+              <span class="ch ch-b"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="React logo" />React</span>
+              <span class="ch ch-b"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" class="inv"
+                  alt="Next.js logo" />Next.js</span>
+              <span class="ch ch-b"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="TailwindCSS logo" />TailwindCSS</span>
             </div>
           </div>
-        </div>
-        <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div
-            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">
-            4</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div
-              class="flex-shrink-0 w-24 h-24 bg-blue-100 text-blue-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-12 h-12" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
+
+          <div class="sk rv d2">
+            <div class="sk-head">
+              <div class="sk-icon or" aria-hidden="true">⚙️</div>
+              <div class="sk-name">Backend</div>
             </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Future Goals</h2>
-              <p class="leading-relaxed">As I continue my journey as a Computer Science and Data Science student, I am dedicated to expanding my skills in full-stack web development and AI-based technologies. My goal is to contribute to meaningful projects that solve real-world problems and make a positive impact through technology.              </p>
+            <div class="chips">
+              <span class="ch ch-n"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js logo" />Node.js</span>
+              <span class="ch ch-n"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                  class="inv" alt="Express logo" />Express</span>
+              <span class="ch ch-n"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" class="inv"
+                  alt="Flask logo" />Flask</span>
+              <span class="ch ch-n"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                  alt="REST APIs logo" />REST APIs</span>
+            </div>
+          </div>
+
+          <div class="sk rv d3">
+            <div class="sk-head">
+              <div class="sk-icon vi" aria-hidden="true">🤖</div>
+              <div class="sk-name">AI &amp; Machine Learning</div>
+            </div>
+            <div class="chips">
+              <span class="ch ch-v"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python logo" />Python</span>
+              <span class="ch ch-v"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+                  alt="scikit-learn logo" />scikit-learn</span>
+              <span class="ch ch-v"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                  alt="TensorFlow logo" />TensorFlow</span>
+              <span class="ch ch-v"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+                  alt="NumPy logo" />NumPy</span>
+              <span class="ch ch-v"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+                  alt="pandas logo" />pandas</span>
+              <span class="ch ch-v"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+                  alt="Matplotlib logo" />Matplotlib</span>
+              <span class="ch ch-v"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>NLTK</span>
+            </div>
+          </div>
+
+          <div class="sk rv d4">
+            <div class="sk-head">
+              <div class="sk-icon gr" aria-hidden="true">🛠️</div>
+              <div class="sk-name">Tools &amp; Data</div>
+            </div>
+            <div class="chips">
+              <span class="ch ch-g"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                  alt="SQL logo" />SQL</span>
+              <span class="ch ch-g"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                  alt="Git logo" />Git &amp; GitHub</span>
+              <span class="ch ch-g"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg"
+                  alt="Jupyter logo" />Jupyter</span>
+              <span class="ch ch-g"><img
+                  src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/microsoftexcel.svg"
+                  class="inv" alt="Excel logo" />Excel</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
-
-  <!-- contact us form -->
-  <div id="contact" class="ccf">
-    <div class="contact-container">
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-        <h2>Contact Us</h2>
-        <div class="form-group">
-          <input type="hidden" name="access_key" value="f4f57aea-270a-4031-ae49-b63b289b9e7c">
-          <label for="name">Name</label>
-          <input type="text" id="nameinput" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button id="btn" onclick="clear()" type="submit">Submit</button>
-
-      </form>
     </div>
-  </div>
-  <!-- contact us end -->
+  </section>
+
+  <div class="hr"></div>
+
+
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="proj-hd">
+        <div>
+          <p class="ew rv">What I've built</p>
+          <h2 class="sh rv d1">Projects</h2>
+        </div>
+        <a href="https://github.com/prajjukorban" class="btn btn-ghost rv" target="_blank" rel="noopener">
+          All on GitHub
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7" />
+            <polyline points="7 7 17 7 17 17" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Featured: AI / ML projects -->
+      <div class="proj-feat">
+
+        <article class="pc rv">
+          <div class="pc-thumb pc-thumb-text"
+            style="background: linear-gradient(135deg, rgba(251, 146, 60, 0.05) 0%, rgba(7, 13, 26, 0.95) 100%);">
+            <div class="thumb-text-inner">
+              <span class="thumb-title" style="color: #f97316; text-shadow: 0 0 16px rgba(249, 115, 22, 0.35);">TF /
+                KERAS</span>
+              <span class="thumb-subtitle">Fashion MNIST</span>
+              <span class="thumb-detail" style="color: #fdba74;">Clothing Classifier Model</span>
+            </div>
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag" style="color: #fb923c; border-color: rgba(251, 146, 60, 0.22);">DL ·
+              Classification</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Fashion MNIST Clothing Classifier</h3>
+            <p class="pc-desc">A beginner-friendly Deep Learning project that classifies grayscale clothing images into
+              one of 10 fashion categories using an Artificial Neural Network (ANN) built with TensorFlow/Keras.
+              Demonstrates the complete pipeline: data preprocessing, training, evaluation, and prediction.</p>
+            <div class="pc-stack" aria-label="Tech stack">
+              <span class="sb">Python</span><span class="sb">TensorFlow</span><span class="sb">Keras</span><span
+                class="sb">NumPy</span><span class="sb">Matplotlib</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Fashion-MNIST-Clothing-Classifier" class="cbtn cbtn-blue"
+                target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d1">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/hdpf.png"
+              alt="Heart Disease Prediction project screenshot" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">ML · Healthcare</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Heart Disease Prediction</h3>
+            <p class="pc-desc">Predicts likelihood of heart disease using ML techniques. Analyzes health parameters to
+              enable early diagnosis and timely medical intervention.</p>
+            <div class="pc-stack" aria-label="Tech stack">
+              <span class="sb">Python</span><span class="sb">scikit-learn</span><span class="sb">NumPy</span><span
+                class="sb">pandas</span><span class="sb">Flask</span><span class="sb">TailwindCSS</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Heart-Disease-Prediction-Using-Machine-Learning"
+                class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d2">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/emailspam.png"
+              alt="Email Spam Detection project screenshot" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">ML · NLP</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Email Spam Detection</h3>
+            <p class="pc-desc">Web app that classifies email as spam or not using a RandomForestClassifier trained on
+              labeled data. Flask backend with a TailwindCSS frontend.</p>
+            <div class="pc-stack">
+              <span class="sb">Python</span><span class="sb">scikit-learn</span><span class="sb">Flask</span><span
+                class="sb">Jupyter</span><span class="sb">TailwindCSS</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Email-Spam-Detection-using-Machine-Learning-sklearn-"
+                class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d3">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/aipk.jpg"
+              alt="PK Voice Assistant project screenshot" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">AI · Voice</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">PK Voice Assistant</h3>
+            <p class="pc-desc">Voice-activated assistant powered by Google's Generative AI. Listens for "hello pk"
+              activation phrase and performs computer actions and conversational responses.</p>
+            <div class="pc-stack">
+              <span class="sb">Python</span><span class="sb">Google Generative AI</span><span class="sb">Speech
+                Recognition</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Hello_pk_assistant.git" class="cbtn cbtn-blue" target="_blank"
+                rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d4">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/Bank-Churn-Prediction-App-/main/output.png"
+              alt="Bank Customer Churn Prediction App screenshot" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">ML · Banking</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Bank Churn Prediction</h3>
+            <p class="pc-desc">Predicts customer churn using a Random Forest Classifier. Includes CSV batch processing,
+              preprocessing (scaling &amp; encoding), and downloadable reports.</p>
+            <div class="pc-stack">
+              <span class="sb">Python</span><span class="sb">scikit-learn</span><span class="sb">Streamlit</span><span
+                class="sb">pandas</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Bank-Churn-Prediction-App-" class="cbtn cbtn-blue"
+                target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://bank-churn-prediction-app.onrender.com/" class="cbtn cbtn-blue" target="_blank"
+                rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d5">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/Ai-Career-Copilot/main/UI.png"
+              alt="AI Career Copilot project screenshot" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">AI · Productivity</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">AI Career Copilot</h3>
+            <p class="pc-desc">AI-powered assistant that facilitates mock interviews, optimizes resumes, detects skill
+              gaps, and generates learning roadmaps using GenAI.</p>
+            <div class="pc-stack">
+              <span class="sb">Python</span><span class="sb">Google Generative AI</span><span
+                class="sb">Streamlit</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Ai-Career-Copilot" class="cbtn cbtn-blue" target="_blank"
+                rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://ai-career-copilot-toty.onrender.com/" class="cbtn cbtn-blue" target="_blank"
+                rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv">
+          <div class="pc-thumb pc-thumb-text">
+            <div class="thumb-text-inner">
+              <span class="thumb-title">NETFLIX</span>
+              <span class="thumb-subtitle">RECOMMENDATION</span>
+              <span class="thumb-detail">Cosine Similarity Model</span>
+            </div>
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">ML · Recommendation</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Netflix Recommendation</h3>
+            <p class="pc-desc">A TV shows and movie recommendation engine built with machine learning. Uses TF-IDF
+              vectorization and Cosine Similarity to suggest content based on genres and descriptions.</p>
+            <div class="pc-stack">
+              <span class="sb">Python</span><span class="sb">scikit-learn</span><span class="sb">pandas</span><span
+                class="sb">NumPy</span>
+            </div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Netflix-Tv-Shows-Movie-Recommendation-System"
+                class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /proj-feat -->
+
+      <!-- Standard grid -->
+      <div class="proj-std">
+
+        <article class="pc rv">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/weather.jpg"
+              alt="Weather App dashboard showing current weather search by city" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">React · API</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Weather App</h3>
+            <p class="pc-desc">Responsive ReactJS weather app. Search any city for real-time temperature, humidity, and
+              conditions via a weather API.</p>
+            <div class="pc-stack"><span class="sb">React</span><span class="sb">Weather API</span><span
+                class="sb">CSS</span></div>
+            <div class="pc-acts">
+              <a href="https://weatherapp-pk2006.netlify.app/" class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d1">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/psman.jpg"
+              alt="Password Manager application interface for storing and managing secure credentials" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">React · Security</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Password Manager</h3>
+            <p class="pc-desc">Secure ReactJS password manager. Add, view (toggle visibility), and delete saved
+              passwords for different websites.</p>
+            <div class="pc-stack"><span class="sb">React</span><span class="sb">LocalStorage</span><span
+                class="sb">CSS</span></div>
+            <div class="pc-acts">
+              <a href="https://passwormanagerpk.netlify.app/" class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d2">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/First dashboard.jpg"
+              alt="Excel dashboard visualizing online store customer and sales data analysis" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">Data · Analytics</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Online Store Data Analysis</h3>
+            <p class="pc-desc">Analyzed customer demographics, sales channels, and order details in Excel to derive
+              business insights and inform decisions.</p>
+            <div class="pc-stack"><span class="sb">Excel</span><span class="sb">Data Analysis</span><span
+                class="sb">Visualization</span></div>
+            <div class="pc-acts">
+              <a href="https://github.com/prajjukorban/Prajwal-online-store-Data-Analysis-in-Excel.git"
+                class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d3">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/qrcode.jpg"
+              alt="Interactive QR Code Generator web application" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">Web · Tool</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">QR Code Generator</h3>
+            <p class="pc-desc">Generate QR codes for URLs or text with one click. Supports downloadable output for easy
+              sharing.</p>
+            <div class="pc-stack"><span class="sb">HTML</span><span class="sb">CSS</span><span
+                class="sb">JavaScript</span></div>
+            <div class="pc-acts">
+              <a href="https://qrcodegenretorpk.netlify.app/" class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d4">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/todo.jpg"
+              alt="To Do List web application showing task inputs and task items" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">Web · Productivity</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">To Do List</h3>
+            <p class="pc-desc">Interactive to-do list app to organize tasks. Add, edit, mark as completed, and delete
+              tasks with a clean interface.</p>
+            <div class="pc-stack"><span class="sb">HTML</span><span class="sb">CSS</span><span
+                class="sb">JavaScript</span></div>
+            <div class="pc-acts">
+              <a href="https://todolistpk2006.netlify.app/" class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv d5">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/rqg.jpg"
+              alt="Random Quote Generator interface showing dynamic text blocks" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">Web · Fun</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Random Quote Generator</h3>
+            <p class="pc-desc">Displays inspirational quotes at the click of a button. Minimal, clean interface with
+              smooth interactions.</p>
+            <div class="pc-stack"><span class="sb">HTML</span><span class="sb">CSS</span><span
+                class="sb">JavaScript</span></div>
+            <div class="pc-acts">
+              <a href="https://rqgenerator1.netlify.app/" class="cbtn cbtn-blue" target="_blank" rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pc rv">
+          <div class="pc-thumb">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/doyouloveme.jpg"
+              alt="Do You Love Me interactive prank game web application" loading="lazy" />
+            <div class="pc-thumb-fade" aria-hidden="true"></div>
+            <span class="pc-tag">Web · Fun</span>
+          </div>
+          <div class="pc-body">
+            <h3 class="pc-title">Do You Love Me? Prank</h3>
+            <p class="pc-desc">A playful web project showcasing interactive design with fun user interaction elements
+              built with modern web technologies.</p>
+            <div class="pc-stack"><span class="sb">HTML</span><span class="sb">CSS</span><span
+                class="sb">JavaScript</span></div>
+            <div class="pc-acts">
+              <a href="https://doyoulovememyprojectpk.netlify.app/" class="cbtn cbtn-blue" target="_blank"
+                rel="noopener">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /proj-std -->
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-layout">
+
+        <!-- left: photo + facts -->
+        <div class="about-stick rv">
+          <div class="about-photo">
+            <img src="https://raw.githubusercontent.com/prajjukorban/my-potrfolio/main/images/photo.png"
+              alt="Prajwal Korban" loading="lazy" />
+            <div class="about-photo-sheen" aria-hidden="true"></div>
+            <div class="about-photo-border" aria-hidden="true"></div>
+          </div>
+          <div class="facts">
+            <div class="fact">
+              <div class="fact-l">Degree</div>
+              <div class="fact-v">B.Tech CSE</div>
+            </div>
+            <div class="fact">
+              <div class="fact-l">Specialization</div>
+              <div class="fact-v">Data Science</div>
+            </div>
+            <div class="fact">
+              <div class="fact-l">Class XII</div>
+              <div class="fact-v">80%</div>
+            </div>
+            <div class="fact">
+              <div class="fact-l">Projects</div>
+              <div class="fact-v">14+</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right: text + timeline -->
+        <div class="about-right">
+          <p class="ew rv">Who I am</p>
+          <h2 class="sh rv d1">About Me</h2>
+
+          <p class="about-p rv d2">
+            I started my technology journey in <strong>web development</strong>, creating clean, responsive user
+            interfaces. However, once I explored <strong>Artificial Intelligence and Machine Learning (AI/ML)</strong>,
+            I fell in love with how data can make systems intelligent. I pivot-focused my efforts to master AI/ML, which
+            is where my passion lies and what I am dedicated to today.
+          </p>
+          <p class="about-p rv d2">
+            Currently, I am pursuing a B.Tech in Computer Science and Engineering (Data Science) at Rai Technology
+            University, Bengaluru. Building projects like heart disease classification and voice assistants has helped
+            me bridge frontend technologies with intelligent backends (using Flask), turning complex data models into
+            functional, interactive tools.
+          </p>
+          <p class="about-p rv d3">
+            As a CS and Data Science student, my goal is to continue engineering AI-powered solutions that solve
+            real-world problems. I strive to combine the precision of machine learning with the seamless accessibility
+            of web development to build modern, impactful products.
+          </p>
+
+          <div class="tl rv d4">
+
+            <div class="tl-row">
+              <div class="tl-spine">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-body">
+                <p class="tl-ew">Background</p>
+                <p class="tl-ttl">Early Education — Yadgir</p>
+                <p class="tl-txt">Born November 3, 2006. Class 10 at Mahatma Gandhi School (2022). PCMB stream at
+                  Prerana PU College, Yadgir — passed with 80%.</p>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-spine">
+                <div class="tl-dot"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-body">
+                <p class="tl-ew">Education</p>
+                <p class="tl-ttl">B.Tech CSE (Data Science) · Rai Technology University</p>
+                <p class="tl-txt">Started tech journey in high school with HTML, CSS, and JavaScript. Expanded into ML
+                  through a Udemy course — NumPy, pandas, scikit-learn, TensorFlow. Built projects in heart disease
+                  prediction and dog breed classification.</p>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-spine">
+                <div class="tl-dot v"></div>
+                <div class="tl-line"></div>
+              </div>
+              <div class="tl-body">
+                <p class="tl-ew v">Skills</p>
+                <p class="tl-ttl">Web &amp; Data Science Proficiency</p>
+                <p class="tl-txt">Developed strong web fundamentals — responsive layouts, interactive UIs, clean code.
+                  Integrated ML models into web apps using Flask, bridging frontend and data-driven backends.</p>
+              </div>
+            </div>
+
+            <div class="tl-row">
+              <div class="tl-spine">
+                <div class="tl-dot v"></div>
+              </div>
+              <div class="tl-body">
+                <p class="tl-ew v">Future Goals</p>
+                <p class="tl-ttl">Full-Stack &amp; AI Engineering</p>
+                <p class="tl-txt">Dedicated to expanding skills in full-stack development and AI-based technologies.
+                  Goal: contribute to meaningful projects that solve real-world problems and make a positive impact.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="hr"></div>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-layout">
+
+        <div class="contact-left">
+          <p class="ew rv">Let's connect</p>
+          <h2 class="sh rv d1">Contact Me</h2>
+          <p class="sl rv d2">Always open to discussing internship opportunities, new projects, or collaborations in web
+            development and AI.</p>
+
+          <div class="c-links rv d3">
+            <a href="https://github.com/prajjukorban" class="c-link" target="_blank" rel="noopener">
+              <div class="c-link-ic" aria-hidden="true">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+                </svg>
+              </div>
+              <div>
+                <div class="c-link-main">GitHub</div>
+                <div class="c-link-sub">github.com/prajjukorban</div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/prajwalkorban" class="c-link" target="_blank" rel="noopener">
+              <div class="c-link-ic" aria-hidden="true">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </div>
+              <div>
+                <div class="c-link-main">LinkedIn</div>
+                <div class="c-link-sub">linkedin.com/in/prajwalkorban</div>
+              </div>
+            </a>
+
+            <a href="mailto:prajjukorban@gmail.com" class="c-link">
+              <div class="c-link-ic" aria-hidden="true">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <div class="c-link-main">Email</div>
+                <div class="c-link-sub">prajjukorban@gmail.com</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="cf rv d2" id="contact-form" onsubmit="event.preventDefault(); submitForm();">
+          <input type="hidden" name="access_key" value="f4f57aea-270a-4031-ae49-b63b289b9e7c" />
+          <div class="cf-group">
+            <label for="cf-name" class="cf-label">Name</label>
+            <input type="text" id="cf-name" name="name" class="cf-input" placeholder="Your name" autocomplete="name"
+              required />
+          </div>
+          <div class="cf-group">
+            <label for="cf-email" class="cf-label">Email</label>
+            <input type="email" id="cf-email" name="email" class="cf-input" placeholder="your@email.com"
+              autocomplete="email" required />
+          </div>
+          <div class="cf-group">
+            <label for="cf-msg" class="cf-label">Message</label>
+            <textarea id="cf-msg" name="message" class="cf-ta" placeholder="Tell me about your project or opportunity…"
+              required></textarea>
+          </div>
+          <button type="submit" class="cf-submit" id="cf-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Send Message
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="wrap foot-inner">
+      <span class="foot-copy">© 2025 Prajwal Korban. All rights reserved.</span>
+      <ul class="foot-links" role="list">
+        <li><a href="https://github.com/prajjukorban" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/prajwalkorban" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:prajjukorban@gmail.com">Email</a></li>
+        <li><a href="#hero">Back to top ↑</a></li>
+      </ul>
+    </div>
+  </footer>
 
   <script>
+    /* ── mobile nav ── */
+    const burger = document.getElementById('burger');
+    const mobNav = document.getElementById('mob-nav');
+    burger.addEventListener('click', () => {
+      const open = mobNav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    function closeMob() {
+      mobNav.classList.remove('open');
+      burger.setAttribute('aria-expanded', false);
+    }
 
-    new TypeIt("#simpleUsage", {
-      speed: 50,
-      waitUntilVisible: true,
-      afterComplete: function (instance) {
-        instance.destroy();
+    /* ── nav scroll state ── */
+    const nav = document.getElementById('nav');
+    const navLinks = document.querySelectorAll('.nav-pill a');
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        nav.classList.toggle('up', window.scrollY > 20);
+
+        // active pill
+        let cur = '';
+        document.querySelectorAll('section[id]').forEach(s => {
+          if (window.scrollY >= s.offsetTop - 100) cur = s.id;
+        });
+        navLinks.forEach(a => {
+          a.classList.toggle('on', a.getAttribute('href') === '#' + cur);
+        });
+        ticking = false;
+      });
+    }, { passive: true });
+
+    /* ── scroll reveal ── */
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+
+    document.querySelectorAll('.rv').forEach(el => {
+      // immediately reveal hero elements
+      if (el.closest('#hero')) { el.classList.add('in'); return; }
+      io.observe(el);
+    });
+
+    /* ── particle canvas ── */
+    (function particles() {
+      const cv = document.getElementById('canvas');
+      if (!cv) return;
+      const ctx = cv.getContext('2d');
+      let W = 0, H = 0, pts = [], raf;
+
+      function resize() {
+        W = cv.width = cv.offsetWidth;
+        H = cv.height = cv.offsetHeight;
       }
-    })
-      .type("I am Prajwal.k", { delay: 300 })
-      .move(null, { to: "END" })
+      resize();
 
-      .break()
-      .go();
+      const ro = new ResizeObserver(resize);
+      ro.observe(cv.parentElement);
 
-    // Starting the second TypeIt instance after the first one completes
-    setTimeout(() => {
+      const C = ['rgba(56,189,248,', 'rgba(139,92,246,'];
+      for (let i = 0; i < 55; i++) {
+        pts.push({
+          x: Math.random() * W, y: Math.random() * H,
+          r: Math.random() * 1.2 + .3,
+          vx: (Math.random() - .5) * .25,
+          vy: (Math.random() - .5) * .25,
+          c: C[i % 2 === 0 ? 0 : 1],
+          a: Math.random() * .45 + .08,
+        });
+      }
 
-      new TypeIt("#simpleUsage2", {
-        speed: 50,
-        waitUntilVisible: true,
-        loop: true,
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+
+        // connection lines
+        for (let i = 0; i < pts.length; i++) {
+          for (let j = i + 1; j < pts.length; j++) {
+            const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+            const d = Math.hypot(dx, dy);
+            if (d < 110) {
+              ctx.beginPath();
+              ctx.moveTo(pts[i].x, pts[i].y);
+              ctx.lineTo(pts[j].x, pts[j].y);
+              ctx.strokeStyle = `rgba(56,189,248,${.045 * (1 - d / 110)})`;
+              ctx.lineWidth = .5;
+              ctx.stroke();
+            }
+          }
+        }
+
+        pts.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = p.c + p.a + ')';
+          ctx.fill();
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0 || p.x > W) p.vx *= -1;
+          if (p.y < 0 || p.y > H) p.vy *= -1;
+        });
+
+        raf = requestAnimationFrame(draw);
+      }
+
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) draw();
+    })();
+
+    /* ── contact form ── */
+    function submitForm() {
+      const form = document.getElementById('contact-form');
+      const btn = document.getElementById('cf-btn');
+      const originalBtnHtml = btn.innerHTML;
+
+      // Use FormData to compile all inputs automatically
+      const formData = new FormData(form);
+
+      // Set visual button loading state
+      btn.style.background = 'linear-gradient(135deg, var(--blue), var(--violet))';
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
       })
-        .type(" Data Science")
-        .pause(1000)
-        .delete(12)
-        .type(" Web Developer")
-        .pause(1000)
-        .delete(13)
-        .type("Video Editor")
-        .move(null, { to: "END" })
-        .pause(1000)
-        .delete(12)
-        .type(" Programmer")
-        .move(null, { to: "END" })
-        .pause(1000)
-        .delete(10)
-        .type(" Upcomming Engineer")
-        .pause(500)
-        .delete(18)
-        .go();
-
-    }, 3000);
-
-
-
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            btn.textContent = '✓ Message sent!';
+            form.reset();
+          } else {
+            btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+            btn.textContent = 'Submission failed';
+          }
+        })
+        .catch(err => {
+          btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
+          btn.textContent = 'Error sending message';
+        })
+        .finally(() => {
+          setTimeout(() => {
+            btn.style.background = '';
+            btn.disabled = false;
+            btn.innerHTML = originalBtnHtml;
+          }, 2800);
+        });
+    }
   </script>
 </body>
 

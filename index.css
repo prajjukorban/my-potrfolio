@@ -312,6 +312,7 @@ section{position:relative;z-index:1;padding:clamp(4rem,8vw,7rem) 0;}
 .prof-img{
   position:absolute;inset:7px;border-radius:50%;
   object-fit:cover;z-index:1;
+   scale:1.65;
 }
 
 /* floating info cards */
